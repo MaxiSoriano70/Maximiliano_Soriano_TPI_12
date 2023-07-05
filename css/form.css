@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: #D1891C;
+    height: 38px;
+    padding: 10px 20px;
+}
+
+header p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+nav{
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    background-color: #00669F;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    color: #FFF;
+    padding: 25px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.formulario{
+    background-color: #FFF;
+    width: 90vh;
+}
+
+.formulario form{
+    background-color: #00669F;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+form h2{
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+form p{
+    color: #C0C0C0;
+    margin-bottom: 20px;
+}
+
+.cuerpo{
+    display: flex;
+}
+
+.c-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.c-1 label{
+    color: #C0C0C0;
+}
+
+.c-1 input{
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.c-1 textarea{
+    margin-top: 15px;
+}
+
+.c-2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.c-2 label{
+    color: #C0C0C0;
+}
+
+.c-2 select{
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.c-2 input{
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.c-2 p{
+    margin: 5px 0;
+}
+
+.poderes{
+    display: flex;
+    flex-direction: column;
+}
+
+.poderes div input{
+    border-radius: 0;
+    margin: 0px 10px 5px 0px;
+}
+
+.poderes div label{
+    font-size: 14px;
+}
+
+.poderes div label:active{
+    background-color: #FFF;
+}
+
+.poderes div label:hover{
+    text-decoration: underline;
+}
+
+.radio input{
+    margin: 0px 10px 5px 0px;
+}
+
+.radio label{
+    font-size: 14px;
+}
+
+.radio label:active{
+    background-color: #FFF;
+}
+
+.radio label:hover{
+    text-decoration: underline;
+}
+
+.footer-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-form a{
+    background-color: aqua;
+    color: #000080;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 70px;
+    border-radius: 15px;
+}
+
+.footer-form a:hover{
+    background-color: #000080;
+    color: #FFF;
+}
+
+input[type="text"][name="nombre"]:invalid,
+input[type="date"][name="fecha"]:invalid{
+    border: 3px solid red;
+}
+
+input[type="text"][name="nombre"]:valid,
+input[type="date"][name="fecha"]:valid{
+    border: 3px solid transparent;
+}
+
+footer{
+    align-items: center;
+    background-color: #00669F;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer img{
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    width: 100px;
+}
+
+@media screen and (max-width: 480px){
+    footer{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer p{
+        padding: 10px 0;
+    }
+
+    footer img{
+        position: relative;
+        right: 0;
+    }
+}
